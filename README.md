@@ -1,24 +1,65 @@
-# SCT_DC_1: Visualizing Population Distribution Using World Bank Data
+# 📊 Task 1 - Population Visualization using World Bank Data
 
-## 📌 Task Description
-As part of my 1-month internship in Data Science, this task involves creating a **bar chart or histogram** to visualize the distribution of a continuous variable. For this task, I have used **population data** from the **World Bank** to show the distribution of total population across countries.
+## 📝 Objective
+Create visualizations to understand population distribution using real-world data from the World Bank and simulated demographic data.
 
-## 📊 Objective
-To analyze and visualize the **top 20 most populous countries in the year 2023** using a horizontal bar chart.
+---
 
-## 🧮 Data Source
-The dataset used for this task is provided by the **World Bank Group** and includes total population data from 1960 to 2023.
+## 📁 Dataset
+- Source: World Bank Open Data
+- File: `API_SP.POP.TOTL_DS2_en_csv_v2_399596.zip`
 
-- Indicator: `SP.POP.TOTL` – Total population
-- [Original Data Link (World Bank)](https://data.worldbank.org/indicator/SP.POP.TOTL)
+---
 
-## 🛠️ Technologies Used
-- Python
-- pandas
-- matplotlib
+## ✅ Tasks Covered
+1. **Extract and Read Data**
+   - Extract `.csv` from `.zip`
+   - Load using `pandas`
 
-## 📈 Output
-A horizontal bar chart showing the **Top 20 Most Populous Countries in 2023**.
+2. **Data Cleaning & Transformation**
+   - Convert wide to long format
+   - Remove missing/null values
+   - Convert year to integer
 
-## 📁 Repository Structure
+3. **Visualizations**
+   - 📈 Bar Chart: Top 10 most populous countries (2022)
+   - 📊 Histogram: Simulated age distribution of a sample population
+   - 🧍‍♂️🧍‍♀️ Count Plot: Simulated gender distribution
+   - 🗺 Choropleth Map: Global population by country (2022)
 
+---
+
+## 🛠 Libraries Used
+- `pandas`
+- `matplotlib`
+- `seaborn`
+- `plotly`
+- `numpy`
+- `zipfile`
+- `os`
+
+---
+
+## 🚀 How to Run
+1. Download the ZIP file from the World Bank.
+2. Replace the ZIP path in the script with your own local path.
+3. Run the script in a Python environment (Jupyter Notebook recommended).
+
+---
+
+## 📷 Output Previews
+- Bar chart for top 10 countries
+- Histogram of simulated age data
+- Count plot of gender
+- Interactive choropleth world map
+
+---
+
+## 📌 Notes
+- For age and gender plots, synthetic data is generated using `numpy`.
+- Choropleth uses ISO country codes for mapping.
+
+---
+
+## 📎 License
+Data © World Bank Group. Code © YourNameHere 2025.
